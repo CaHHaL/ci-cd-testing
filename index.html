@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CI/CD App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 25px #0001;
+            max-width: 450px;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        button {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 20px;
+            color: #15803d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>My CI/CD Application</h1>
+        <p>This website is deployed using Docker and Jenkins.</p>
+
+        <button onclick="showMessage()">Test Application</button>
+
+        <p id="message">Ready to test!</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Success! Your frontend is working.";
+        }
+    </script>
+</body>
+
+</html>
